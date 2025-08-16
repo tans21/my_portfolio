@@ -5,6 +5,21 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
+
+    <script>
+      (() => {
+        const storedTheme = localStorage.getItem("theme");
+        const isMobile = window.innerWidth <= 768; // treat <=768px as mobile
+
+        if (storedTheme === "dark" || (!storedTheme && isMobile)) {
+          document.documentElement.classList.add("dark");
+          if (!storedTheme) localStorage.setItem("theme", "dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+          if (!storedTheme) localStorage.setItem("theme", "light");
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
