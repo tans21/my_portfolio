@@ -102,12 +102,11 @@ export const AboutSection = () => {
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">
-                    Generative AI & Intelligent Systems
+                    Cloud & Data Infrastructure (AWS & PostgreSQL)
                   </h4>
                   <p className="text-muted-foreground">
-                    Designing context-aware applications using LLMs and RAG
-                    pipelines to enhance user experiences with intelligent
-                    functionality.
+                    Deploying and managing resilient, cost-efficient systems on AWS, 
+                    with a focus on automation and robust PostgreSQL data management.
                   </p>
                 </div>
               </div>
